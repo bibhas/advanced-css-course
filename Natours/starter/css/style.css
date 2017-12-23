@@ -47,7 +47,7 @@ body {
 }
 
 .logo {
-  height: 60px;
+  height: 35px;
 }
 
 .header_text {
@@ -59,19 +59,48 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 .header_text_main {
   display: block;
   font-size: 66px;
   font-weight: 400;
   letter-spacing: 40px;
-  margin-right: -40px;
   line-height: 2;
+  animation: 1s ease-in slideFromLeft;
+} 
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .header_text_secondary {
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
-  letter-spacing: 15px;
+  letter-spacing: 20.5px;
   transform: translateX(4px);
+  animation: 1s ease-in slideFromRight;
 }
