@@ -1,0 +1,14 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Natours starter ",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Bibhas Acharya",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  } 
+}
