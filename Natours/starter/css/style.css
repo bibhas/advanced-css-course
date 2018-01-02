@@ -84,7 +84,7 @@ body {
 
 .button {
   display: inline-block;
-  background-color: white;
+  background-color: #fff;
   padding: 2rem 4rem;
   font-size: 2rem;
   border-radius: 10rem;
